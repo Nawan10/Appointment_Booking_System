@@ -1,0 +1,82 @@
+.about {
+    background-color:#d19346;
+    margin:  auto;
+    justify-content:space-between;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.about-left {
+    flex-basis: 50%;
+}
+
+.about-right {
+    flex-basis: 46%;
+}
+
+.about-img {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    width: 90%;
+    border-radius: 10px;
+
+}
+
+.about-right h1 {
+    font-size: 50px;
+    color: white;
+    margin-top: 5px;
+    text-transform: none;
+
+}
+
+.about-right p {
+    text-align: justify;
+    color: rgb(57, 32, 1);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: none;
+    margin-right: 100px;
+}
+
+/* ........Media query........ */
+
+@media (max-width: 1180px){
+    .about {
+        flex-direction: column;
+    }
+
+    .about-left {
+        /* flex-basis: 100%;
+        margin: 5px; */
+        order: 2;
+    }
+    .about-right {
+        flex-basis: 100%;
+        margin: 5px;
+    }
+
+    .about-right h1{
+        text-align: center;
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .about-right p{
+        font-size: 14px;
+        margin: 15px auto 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .about-img{
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,241 @@
+
+/* Header Section */
+.dashboard-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 100px;
+    transform: translateX(-30%);
+    text-align: center;
+}
+
+.dashboard-header h3 {
+    font-size: 50px;
+    color: rgb(138, 103, 4);
+    margin-bottom: 10px;
+}
+
+
+
+/* Main Content */
+.main-content {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.dashboard-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 10px; */
+}
+
+.dashboard-card h3  {
+    color: #cfb48f;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dashboard-card h1  {
+    color: #bd955d;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dashboard-card p {
+    color: gray;
+}
+
+.dashboard-card .icon {
+    font-size: 40px;
+    color: black;
+}
+
+/* Button */
+.dashboard-button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dashboard-button:hover {
+    background-color: rgb(125, 119, 104);
+}
+
+/* Sidebar nav button */
+.nav-btn {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-btn:hover {
+    background-color: rgb(227, 225, 220);
+}
+
+/* Media Queries */
+
+/* Tablet Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .dashboard-header {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 30%;
+        margin-left: 30px;
+        margin-top: 120px;
+        height: auto;
+    }
+
+    .main-content {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .dashboard-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .dashboard-button {
+        width: 100%;
+    }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .dashboard-header {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .dashboard-card {
+        width: 100%;
+        margin-right: 0;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .dashboard-card h3 {
+        font-size: 22px;
+    }
+
+    .dashboard-card p {
+        font-size: 16px;
+    }
+
+    .dashboard-button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .dashboard-header h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .profile-name {
+        font-size: 14px;
+    }
+
+    .profile-id {
+        font-size: 12px;
+    }
+
+    .dashboard-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .dashboard-card h3 {
+        font-size: 18px;
+    }
+
+    .dashboard-card p {
+        font-size: 14px;
+    }
+
+    .dashboard-card .icon {
+        font-size: 24px;
+    }
+
+    .dashboard-button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .nav-btn {
+        font-size: 14px;
+        padding: 10px;
+        gap: 5px;
+    }
+}

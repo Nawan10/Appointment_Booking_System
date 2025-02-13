@@ -1,0 +1,80 @@
+/* Main button styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Add Appointment Button */
+button.bg-green-500 {
+  background-color: #d4a265;
+  color: rgb(0, 0, 0);
+}
+
+button.bg-green-500:hover {
+  background-color: #38a169;
+  transform: scale(1.05);
+}
+
+/* Edit Appointment Button */
+button.bg-blue-500 {
+  background-color: #0258f7;
+  color: white;
+}
+
+button.bg-blue-500:hover {
+  background-color: #3182ce;
+  transform: scale(1.05);
+}
+
+/* Delete Appointment Button */
+button.bg-red-500 {
+  background-color: #ff0000;
+  color: white;
+}
+
+button.bg-red-500:hover {
+  background-color: #e53e3e;
+  transform: scale(1.05);
+}
+
+/* General hover effect */
+button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+}
+
+/* Disabled button */
+button:disabled {
+  background-color: #e2e8f0;
+  color: #a0aec0;
+  cursor: not-allowed;
+}
+
+/* Table header */
+.table-th {
+  background: #e1ccaf;
+  color: #1a1819;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .table-th {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

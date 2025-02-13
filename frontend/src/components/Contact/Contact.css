@@ -1,0 +1,134 @@
+.contact {
+    background-color: #d19346;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* First column for header, second row for content */
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    padding: 40px;
+}
+
+/* Header Section */
+.contact-header {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 30px; 
+}
+
+.contact-header h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    color: rgb(57, 32, 1);
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Contact Content - Email/Phone on left, Form on right */
+.contact-content {
+    display: flex;
+    flex-direction: row; /* Make it a row */
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 50px;
+}
+
+.contact-col-left, .contact-col-right {
+    flex: 1;
+    max-width: 50%;
+}
+
+.contact-col-left {
+    text-align: left;
+    padding: 20px;
+    margin-left: 200px;
+}
+
+.contact-col-left h3 {
+    font-size: 25px;
+    color: rgb(82, 82, 82);
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.contact-col-left ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+} 
+.contact-col-left img {
+    width: 25px;
+    margin-right: 10px;
+}
+.contact-col-left ul li img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Form Styling */
+.contact-col-right {
+    text-align: left;
+    color: rgb(57, 32, 1);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px;
+    margin-right: 200px;
+}
+
+.contact-col-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-col-right label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-col-right input,
+.contact-col-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-col-right button {
+    background-color: #5a3f1b;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-col-right span{
+    display: block;
+    margin: 20px 0;
+}
+
+/* ........Media query........ */
+
+@media (max-width: 1130px){
+    .contact {
+        display: block;
+    }
+
+    .contact-col-left{
+        padding: 20px;
+    }
+
+    .contact-col-right{
+        padding: 20px;
+    }
+    .contact-content{
+        padding: 20px;
+    }
+}
