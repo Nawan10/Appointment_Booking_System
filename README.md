@@ -32,7 +32,6 @@ Ensure you have the following installed:
 1. **Clone the Repository**
    ```sh
    git clone https://github.com/Nawan10/Appointment_Booking_System.git
-   cd salon-booking
    ```
 2. **Backend Setup**
    ```sh
